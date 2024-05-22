@@ -1,0 +1,154 @@
+* {
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background:#faf2da;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ToDoList {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 12px;
+  font-size: 30px;
+}
+
+.todo-list {
+  background: #570b0b;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.category-list {
+  background: #04012b;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 25px;
+}
+
+.todo-form, .category-form {
+  width: 100%;
+}
+
+
+
+.todo-input, .category-input {
+  outline: none;
+  background: none;
+  border: 1px solid #b3262b;
+  padding: 4px 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 300px;
+  color: #fff;
+  border-radius: 25px;
+  font-size: large;
+}
+
+.description-input, .deadline-input {
+  outline: none;
+  background: none;
+  border: 1px solid #4e56eb;
+  padding: 4px 10px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  width: 300px;
+  color: #fff;
+  border-radius: 25px;
+  font-size: large;
+}
+
+
+.todo-input::placeholder{
+  color: #e4dada;
+}
+
+.category-input::placeholder {
+  color: #e4dada;
+}
+
+.todo-btn, .filter-btn {
+  background: #b3262b;
+  color: #fff;
+  border:none;
+  padding:8px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.category-btn {
+  background: #4e56eb;
+  color: #fff;
+  border:none;
+  padding:8px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.export-btn, .delete-btn{
+  background: #b3262b;
+  color: #fff;
+  border:none;
+  border-radius: 25px;
+  padding:8px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b3262b;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #4e56eb;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+} 
+
+
+.fa-delete, .fa-edit {
+  display: inline-flex;
+  justify-content: space-between;
+  margin:5px;
+  height: 20px;
+  width: 20px;
+}
+
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #570b0b;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
